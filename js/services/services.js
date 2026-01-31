@@ -1,4 +1,4 @@
-import {state} from "js/data/state.js"
+import {state} from "../data/state.js"
 
 const url = "http://localhost:3000"
 

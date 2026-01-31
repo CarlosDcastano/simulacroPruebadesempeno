@@ -2,6 +2,8 @@ import { app } from "./elements.js";
 import { renderSignUp} from "./render.js";
 import { validarLogin, validarSignup } from "../validarUser.js";
 import {User} from "../models/user.js"
+import { Product } from "../models/product.js";
+import { validarProdct } from "../validarProducts.js";
 
 export function setupListeners() {
 
@@ -34,7 +36,26 @@ export function setupListeners() {
             validarSignup(user.name, user.email, user.password, user.rol)
 
         }
+
     })
 
+    app.addEventListener("submit", event =>{
+        event.preventDefault();
+        if(event.target.id === "createProduct"){
+            console.log("click")
+            const nameProduct = event.target.querySelector("#nameSignUp").value.trim();
+            const priceProduct = event.target.querySelector("#emailSignUp").value.trim();
+            const amountProduct = event.target.querySelector("#passwordSignUp").value.trim();
+            const descriptionProduct = event.target.querySelector("#passwordSignUp").value.trim();
+
+            const product = new Product (nameProduct, priceProduct, amountProduct, descriptionProduct);
+
+            validarProdct(product)
+            
+        }   
+
+    })
+
+    
 
 }

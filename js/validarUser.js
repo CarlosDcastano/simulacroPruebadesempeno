@@ -1,6 +1,6 @@
 import { renderAdminPage, renderUserPage } from "./DOM/render.js";
-import { postUser } from "./js/services/services.js";
-import { state } from "./js/data/state.js";
+import { postUser } from "./services/services.js";
+import { state } from "./data/state.js";
 
 
 export function validarLogin(email, password) {

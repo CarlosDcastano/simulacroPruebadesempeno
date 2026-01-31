@@ -24,7 +24,7 @@
       "nombre": "david",
       "email": "david@gmail.com",
       "password": "davidmio",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "50ef",
@@ -32,6 +32,51 @@
       "email": "abigail@gmail.com",
       "password": "abimia",
       "role": "user"
+    },
+    {
+      "id": "8602",
+      "nombre": "noah",
+      "email": "noah@gmail.com",
+      "password": "nahmio",
+      "role": "user"
+    }
+  ],
+  "products" :[
+    { "imagen": "Logo de la hamburguesa",
+      "nameProduct" : "Hamburguesa",
+      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
+      "precio" : 25000,
+      "cantidad": 1
+    },
+    { "imagen": "Logo de la hamburguesa",
+      "nameProduct" : "Hamburguesa",
+      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
+      "precio" : 25000,
+      "cantidad": 1
+    },
+    { "imagen": "Logo de la hamburguesa",
+      "nameProduct" : "Hamburguesa",
+      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
+      "precio" : 25000,
+      "cantidad": 1
+    },
+    { "imagen": "Logo de la hamburguesa",
+      "nameProduct" : "Hamburguesa",
+      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
+      "precio" : 25000,
+      "cantidad": 1
+    },
+    { "imagen": "Logo de la hamburguesa",
+      "nameProduct" : "Hamburguesa",
+      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
+      "precio" : 25000,
+      "cantidad": 1
+    },
+    { "imagen": "Logo de la hamburguesa",
+      "nameProduct" : "Hamburguesa",
+      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
+      "precio" : 25000,
+      "cantidad": 1
     }
   ]
 }

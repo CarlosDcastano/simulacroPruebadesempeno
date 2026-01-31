@@ -1,12 +1,14 @@
 
-import { getAllUsersJs } from "js/services/services.js";
-import { renderLogin } from "js/DOM/render.js";
-import { setupListeners } from "js/DOM/listeners.js";
+import { getAllUsersJs } from "./services/services.js";
+import { getAllProductsJs } from "./services/serviciosProductos.js";
+import { renderLogin } from "./DOM/render.js";
+import { setupListeners } from "./DOM/listeners.js";
 
 async function main() {
     renderLogin()
     setupListeners()
     await getAllUsersJs()
+    await getAllProductsJs()
 }
 
 main()
