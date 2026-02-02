@@ -8,24 +8,32 @@ export function validarLogin(email, password) {
     const user = state.users.find(u => u.email === email && u.password === password);
 
     if (user) {
+
+    state.currentUser = user;
+
+    // GUARDAR SESIÓN en local
+    localStorage.setItem("currentUser", JSON.stringify(user));
         if (user.role === "admin") {
-            renderAdminPage(user.nombre);
+            renderAdminPage(user.name);
         } else {
-            renderUserPage(user.nombre);
+            renderUserPage(user.name);
         }
     } else {
         alert("Usuario o contraseña incorrectos");
     }
 }
 
-export function validarSignup(name, email, password, rol){
+export function validarSignup(name, email, password, rol) {
+
+    if (/\s/.test(password) || !password) {
+        return alert("La contraseña no puede contener espacios");
+    }
 
     const user = state.users.find(u => u.email === email);
 
-    if(!user){
-        postUser(name, email, password, rol)
-    }else{
-        return alert("Correo electrónico ya fue registrado")
+    if (user) {
+        return alert("Correo electrónico ya fue registrado");
     }
 
+    postUser(name, email, password, rol);
 }

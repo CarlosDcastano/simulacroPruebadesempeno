@@ -1,11 +1,16 @@
 import { postProduct } from "./services/serviciosProductos.js";
 import { state } from "./data/state.js";
 
-export function validarProdct(objProduct){
-    const product = state.products.find(prod => prod.name === objProduct.nameProduct)
-        if(!product){
-            postProduct(objProduct)
-        }else{
+export function validarProdct(product){
+    console.log(state.products)
+    const existProduct = state.products.find(prod => prod.name === product.prodName)
+        if(existProduct){
             alert("Ese producto ya existe");
+        }else{
+            postProduct(product)
         }
+}
+
+export function validarEditedProduct(id){
+    
 }

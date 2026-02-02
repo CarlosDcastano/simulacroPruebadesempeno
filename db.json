@@ -1,82 +1,61 @@
 {
   "users": [
     {
-      "id": "1",
-      "nombre": "gabriela",
-      "email": "gabriela@gmail.com",
+      "id": "2",
+      "name": "jenni",
+      "email": "jenni@gmail.com",
       "role": "admin",
+      "password": "jennimia"
+    },
+    {
+      "id": "1",
+      "name": "gabriela",
+      "email": "gabriela@gmail.com",
+      "role": "user",
       "password": "gabimia"
     },
     {
-      "id": "2",
-      "nombre": "jenni",
-      "email": "jenni@gmail.com",
-      "role": "user"
-    },
-    {
       "id": "3",
-      "nombre": "carlos",
+      "name": "carlos",
       "email": "carlos@gmail.com",
       "role": "user"
     },
     {
       "id": "fa35",
-      "nombre": "david",
+      "name": "david",
       "email": "david@gmail.com",
       "password": "davidmio",
-      "role": "admin"
+      "role": "user"
     },
     {
       "id": "50ef",
-      "nombre": "abigail",
+      "name": "abigail",
       "email": "abigail@gmail.com",
       "password": "abimia",
       "role": "user"
     },
     {
       "id": "8602",
-      "nombre": "noah",
+      "name": "noah",
       "email": "noah@gmail.com",
       "password": "nahmio",
       "role": "user"
     }
   ],
-  "products" :[
-    { "imagen": "Logo de la hamburguesa",
-      "nameProduct" : "Hamburguesa",
-      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
-      "precio" : 25000,
-      "cantidad": 1
+  "products": [
+    {
+      "id": "6ec7",
+      "prodImage": "Logo del producto",
+      "prodName": "alitas",
+      "prodDescription": "Deliciosas alitas",
+      "prodPrice": "25000"
     },
-    { "imagen": "Logo de la hamburguesa",
-      "nameProduct" : "Hamburguesa",
-      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
-      "precio" : 25000,
-      "cantidad": 1
-    },
-    { "imagen": "Logo de la hamburguesa",
-      "nameProduct" : "Hamburguesa",
-      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
-      "precio" : 25000,
-      "cantidad": 1
-    },
-    { "imagen": "Logo de la hamburguesa",
-      "nameProduct" : "Hamburguesa",
-      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
-      "precio" : 25000,
-      "cantidad": 1
-    },
-    { "imagen": "Logo de la hamburguesa",
-      "nameProduct" : "Hamburguesa",
-      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
-      "precio" : 25000,
-      "cantidad": 1
-    },
-    { "imagen": "Logo de la hamburguesa",
-      "nameProduct" : "Hamburguesa",
-      "Description" : "Pan artesanal queso, mantequilla, carne, lechuga y salsas",
-      "precio" : 25000,
-      "cantidad": 1
+    {
+      "id": "3a7c",
+      "prodImage": "Logo del producto",
+      "prodName": "perro caliente",
+      "prodDescription": "Pan, salchicha, queso, ripio de papa y mas",
+      "prodPrice": "1"
     }
   ]
 }

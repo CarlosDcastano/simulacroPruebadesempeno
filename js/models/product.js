@@ -1,9 +1,9 @@
 export class Product{
-    constructor(name, price, amount, description){
-        this.image = "Logo del producto";
-        this.name = name;
-        this.price = price;
-        this.amount = amount;
-        this.description = description
+    constructor(name, description, price){
+        this.prodImage = "Logo del producto";
+        this.prodName = name;
+        this.prodDescription = description;
+        this.prodPrice = price;
+
     }
 }

@@ -9,7 +9,7 @@ export async function getAllUsersJs(){
         if(!res.ok) throw new Error("No fue posible consultar los usuarios");
         const data = await res.json();
         state.users = data;
-        console.log(state.users)
+
     }catch (error) {
         console.error(error)
     }
